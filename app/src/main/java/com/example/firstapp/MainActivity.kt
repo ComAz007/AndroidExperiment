@@ -1,0 +1,62 @@
+package com.example.firstapp
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.Gravity
+import android.view.View
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
+
+class MainActivity : AppCompatActivity() {
+    private val inputText:EditText by lazy { findViewById(R.id.inputText) }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val button: Button = findViewById(R.id.sendMessage)
+        button.setOnClickListener {
+            val text = "Пора покормить кота!"
+            val duration = Toast.LENGTH_LONG
+
+            val toast = Toast.makeText(applicationContext, text, duration)
+            //toast.setGravity(Gravity.CENTER, 0, 0)
+            toast.show()
+
+            val textView: TextView = findViewById(R.id.getText);
+            textView.text =inputText.text;
+        }
+        //OnClickSendMessage(view: View);
+//        val textView: TextView = findViewById(R.id.GetText) as TextView
+//        TextView.setOnClickListener {
+//            TextView.text = getString(R.id.InputText)
+
+    }
+
+        fun randomMe(view: View) {
+            val randomIntent = Intent(this, MainActivity2::class.java)
+            randomIntent.putExtra(MainActivity2.TOTAL_COUNT, 15)
+            startActivity(randomIntent)
+        }
+
+//    fun OnClickSendMessage(view: View) {
+//        val textView: TextView = findViewById(R.id.getText);
+//       // val inputText:EditText = findViewById(R.id.inputText);
+//        val toast =Toast.makeText(this, "mmmtext",Toast.LENGTH_LONG);
+//        toast.setGravity(Gravity.CENTER, 50, 50)
+//        //textView.text =inputText.getText();
+//    }
+
+    fun OnСlickCount(view: View) {
+        val textView: TextView = findViewById(R.id.getText);
+        val countString = textView.text.toString()
+        // Convert value to a number and increment it
+        var count: Int = Integer.parseInt(countString)
+        count++
+        // Display the new value in the text view.
+        textView.text = count.toString();
+    }
+}
