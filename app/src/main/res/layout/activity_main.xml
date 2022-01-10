@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:text="Toast"
-        android:onClick="toastMe"
+        android:onClick="OnСlickToastMe"
         app:layout_constraintTop_toBottomOf="@+id/btnRandom"
         tools:layout_editor_absoluteX="116dp" />
 

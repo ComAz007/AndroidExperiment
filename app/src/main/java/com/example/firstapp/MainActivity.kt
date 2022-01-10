@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         textView.text = count.toString();
     }
 
-    fun toastMe(view: View)
+    fun OnСlickToastMe(view: View)
     {
         val myToast = Toast.makeText(this, "Пора покормить кота!", Toast.LENGTH_LONG)
         myToast.show()
