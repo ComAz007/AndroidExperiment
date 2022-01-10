@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
 
     fun OnСlickToastMe(view: View)
     {
-        val myToast = Toast.makeText(this, "Пора покормить кота!", Toast.LENGTH_LONG)
+        val myToast = Toast.makeText(this, "Пора покормить кота!!!", Toast.LENGTH_LONG)
         myToast.show()
     //with(myToast) {
             //setGravity(Gravity.CENTER, 0, 0)
