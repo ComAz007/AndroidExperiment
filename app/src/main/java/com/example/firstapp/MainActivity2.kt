@@ -31,9 +31,9 @@ class MainActivity2 : AppCompatActivity() {
         }
 
         // Display the random number.
-        val textview_random: TextView = findViewById(R.id.textview_random);
-        val textview_label: TextView = findViewById(R.id.textview_label);
-        textview_random.text = Integer.toString(randomInt)
+        val textview_random: TextView = findViewById(R.id.textview_random)
+        val textview_label: TextView = findViewById(R.id.textview_label)
+        textview_random.text = randomInt.toString()
 
         // Substitute the max value into the string resource
         // for the heading, and update the heading

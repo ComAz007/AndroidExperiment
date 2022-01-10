@@ -19,13 +19,6 @@ class MainActivity : AppCompatActivity() {
 
         val button: Button = findViewById(R.id.sendMessage)
         button.setOnClickListener {
-            val text = "Пора покормить кота!"
-            val duration = Toast.LENGTH_LONG
-
-            val toast = Toast.makeText(applicationContext, text, duration)
-            //toast.setGravity(Gravity.CENTER, 0, 0)
-            toast.show()
-
             val textView: TextView = findViewById(R.id.getText);
             textView.text =inputText.text;
         }
@@ -58,5 +51,15 @@ class MainActivity : AppCompatActivity() {
         count++
         // Display the new value in the text view.
         textView.text = count.toString();
+    }
+
+    fun toastMe(view: View)
+    {
+        val myToast = Toast.makeText(this, "Пора покормить кота!", Toast.LENGTH_LONG)
+        myToast.show()
+    //with(myToast) {
+            //setGravity(Gravity.CENTER, 0, 0)
+
+        //}
     }
 }
