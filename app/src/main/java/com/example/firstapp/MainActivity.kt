@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         val textView: TextView = findViewById(R.id.getText);
         val countString = textView.text.toString()
         // Convert value to a number and increment it
-        var count: Int = Integer.parseInt(countString)
+        var count = countString.toInt()
         count++
         // Display the new value in the text view.
         textView.text = count.toString();

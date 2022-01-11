@@ -11,9 +11,11 @@
         android:id="@+id/textview_label"
         android:layout_width="380dp"
         android:layout_height="17dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="28dp"
         android:text="@string/random_heading"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,10 +23,13 @@
         android:id="@+id/textview_random"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="173dp"
+        android:layout_marginTop="176dp"
         android:text="R"
         android:textSize="72sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/textview_label"
-        tools:layout_editor_absoluteX="175dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_label" />
 </androidx.constraintlayout.widget.ConstraintLayout>
