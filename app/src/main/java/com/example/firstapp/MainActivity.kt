@@ -23,26 +23,14 @@ class MainActivity : AppCompatActivity() {
             val textView: TextView = findViewById(R.id.getText);
             textView.text =inputText.text;
         }
-        //OnClickSendMessage(view: View);
-//        val textView: TextView = findViewById(R.id.GetText) as TextView
-//        TextView.setOnClickListener {
-//            TextView.text = getString(R.id.InputText)
 
     }
 
-        fun randomMe(view: View) {
-            val randomIntent = Intent(this, MainActivity2::class.java)
-            randomIntent.putExtra(MainActivity2.TOTAL_COUNT, 15)
-            startActivity(randomIntent)
-        }
-
-//    fun OnClickSendMessage(view: View) {
-//        val textView: TextView = findViewById(R.id.getText);
-//       // val inputText:EditText = findViewById(R.id.inputText);
-//        val toast =Toast.makeText(this, "mmmtext",Toast.LENGTH_LONG);
-//        toast.setGravity(Gravity.CENTER, 50, 50)
-//        //textView.text =inputText.getText();
-//    }
+    fun randomMe(view: View) {
+        val randomIntent = Intent(this, MainActivity2::class.java)
+        randomIntent.putExtra(MainActivity2.TOTAL_COUNT, 15)
+        startActivity(randomIntent)
+    }
 
     fun OnСlickCount(view: View) {
         val textView: TextView = findViewById(R.id.getText);
@@ -58,19 +46,11 @@ class MainActivity : AppCompatActivity() {
     {
         val myToast = Toast.makeText(this, "Пора покормить кота!!!", Toast.LENGTH_LONG)
         myToast.show()
-    //with(myToast) {
-            //setGravity(Gravity.CENTER, 0, 0)
-
-        //}
     }
 
     fun OnСlickSnack(view: View)
     {
         val mySnack = Snackbar.make(view, "Пора покормить кота Snack'ом", Snackbar.LENGTH_LONG)
         mySnack.show()
-        //with(myToast) {
-        //setGravity(Gravity.CENTER, 0, 0)
-
-        //}
     }
 }
