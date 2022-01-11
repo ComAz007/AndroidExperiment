@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
     private val inputText:EditText by lazy { findViewById(R.id.inputText) }
@@ -59,6 +60,16 @@ class MainActivity : AppCompatActivity() {
         myToast.show()
     //with(myToast) {
             //setGravity(Gravity.CENTER, 0, 0)
+
+        //}
+    }
+
+    fun OnСlickSnack(view: View)
+    {
+        val mySnack = Snackbar.make(view, "Пора покормить кота Snack'ом", Snackbar.LENGTH_LONG)
+        mySnack.show()
+        //with(myToast) {
+        //setGravity(Gravity.CENTER, 0, 0)
 
         //}
     }
